@@ -1,4 +1,5 @@
 class School 
+  attr_writer :name
   
   
   def initialize(name)
