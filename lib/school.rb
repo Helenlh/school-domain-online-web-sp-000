@@ -6,11 +6,7 @@ class School
   end 
   
   def name 
-    @name= name 
-  end 
-  
-  def name 
-    @name
+    attr_writer :name
   end 
   
    def roster 
@@ -25,14 +21,13 @@ class School
    end
  end 
 
-  def grade 
-    
+  def grade(grade)
+    roster.fetch(grade)
   end 
   
-  def sort 
-    
+  def sort
+    roster.values.sort { |grade, student_name| grade } 
   end 
-  
 end 
   
     
