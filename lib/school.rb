@@ -1,12 +1,13 @@
 class School 
   
+  
   def initialize(name)
     @name= name
     @roster= {}
   end 
   
   def name 
-    attr_writer :name
+    
   end 
   
    def roster 
