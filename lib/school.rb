@@ -1,19 +1,12 @@
 class School 
   attr_writer :name
-  
+  attr_writer :roster
   
   def initialize(name)
     @name= name
     @roster= {}
   end 
   
-  def name 
-    
-  end 
-  
-   def roster 
-    
-  end
   
   def add_student(student_name, grade)
     if roster[grade]
