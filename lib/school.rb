@@ -1,4 +1,5 @@
-class School 
+require 'pry'
+School 
   attr_reader :name, :roster 
   
   def initialize(name)
@@ -20,6 +21,7 @@ class School
   
   def sort
     roster.each do |grade, student_array| 
+      binding.pry 
     end 
   end 
 end 
